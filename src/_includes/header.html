@@ -1,11 +1,27 @@
-<header>{% set navPages = collections.all | eleventyNavigation %}
-  <nav>
-    <ul>
-      {%- for entry in navPages %}
-        <li{% if entry.url == page.url %} class="active-nav-link"{% endif %}>
-          <a href="{{ entry.url }}">{{ entry.title }}</a>
-        </li>
-      {%- endfor %}
-    </ul>
+<header >{% set navPages = collections.all | eleventyNavigation %}
+  <nav id="navbar">
+    <div class="wrapper">
+      <a href="/">
+        {% image './src/assets/images/logo-1.jpg', 'Anna Victoria Logo','', 'eager'%}
+        <!-- <img src="./src/assets/images/logo-i.jpg"/> -->
+      </a>
+      <div class="desktop-nav">
+        <ul>
+          {%- for entry in navPages %}
+          <li{% if entry.url==page.url %} class="active-nav-link" {% endif %}>
+            <a href="{{ entry.url }}">{{ entry.title }}</a>
+          </li>
+          {%- endfor %}
+          <a class="dark-button">Contact Me</a>
+        </ul>
+      </div>
+      <div class="mobile-nav">
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
   </nav>
 </header>

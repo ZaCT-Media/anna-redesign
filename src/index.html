@@ -1,12 +1,220 @@
 ---
-layout: 'base.html' 
+layout: 'base.html'
 description: "Meta description for the page"
 metaTitle: 'Title that shows up on social OG tags'
 tagTitle: 'Small Business Websites | £0 Upfront £25 Per Month'
 preloadImg: '/images/imageName.format'
 permalink: '/'
 eleventyNavigation:
-    key: Home
-    order: 0
+key: Home
+order: 0
 ---
 
+
+<section id="hero">
+  <div class="wrapper">
+    <div class="hero-text">
+      <h1>Handmade Makes & Bakes for Every Occasion!</h1>
+      <p>Indulge in handcrafted cakes and treats made with love in Leicester. Whether you're looking for a one-of-a-kind
+        birthday cake, irresistible pastries, or a full grazing table for your next event, i'm here to make it
+        unforgettable.</p>
+      <div class="hero-buttons">
+        <a class="dark-button">Contact Me</a>
+        <a class="dark-button">Gallery</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      {% image './src/assets/images/hero-img-1.png', 'Tray of baked goods', 'eager'%}
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="wrapper">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>Hello, I’m Anna! Cooking & Baking have always been my passion. What started as a hobby in my kitchen has
+        blossomed into a small business right here in Leicester. My goal is to bring joy to your celebrations with
+        delicious, beautiful, and unforgettable bespoke creations.</p>
+      <p>Quality is everything. I source the best local ingredients, support sustainable farming, and put care into
+        everything i make.</p>
+      <a class="light-button">Contact Me</a>
+    </div>
+    <div class="about-images">
+      {% image './src/assets/images/about-img-1.jpg', 'Flower arrangement baked good', 'eager'%}
+      {% image './src/assets/images/about-img-2.jpg', 'Beverage', 'eager'%}
+    </div>
+  </div>
+</section>
+<section id="popular-items-wrapper">
+  <div class="wrapper">
+    <div class="popular-items-top">
+      <section>
+        <p>Anna Victoria - Create</p>
+        <h2>Popular Menu Items</h2>
+      </section>
+      <a class="dark-button">Contact Me</a>
+    </div>
+    <div class="popular-items">
+      <a href="/">
+        {% image './src/assets/images/popular-items-1.jpg', 'Lunch platter', 'lazy'%}
+        <p>Grazing Table -></p>
+      </a><a href="/">
+        {% image './src/assets/images/popular-items-2.jpg', 'Tray of cakes', 'lazy'%}
+        <p>Cakes & Bakes -></p>
+      </a><a href="/">
+        {% image './src/assets/images/popular-items-3.jpg', 'Pastries', 'lazy'%}
+        <p>Pastries -></p>
+      </a><a href="/">
+        {% image './src/assets/images/popular-items-4.jpg', 'Bespoke orders', 'lazy'%}
+        <p>Bespoke Orders -></p>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="testimonials">
+  <div class="wrapper">
+    <div class="grid">
+      <div class="testimonial">
+        <p>“Anna has created many things for me, from cupcakes and birthday cakes, to mini grazing boards and a full
+          baby shower buffet. Her food/cakes are always so beautifully presented and taste amazing too. Highly
+          recommend!”</p>
+        <div class="testimonial-bottom">
+          <b>Cara McGuiness</b>
+          <a href="/">Link to reivew</a>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>“Cannot recommend Anna enough! She catered our Christmas get together and was a joy to work with. All of the
+          food was so fresh and delicious and she even did a mini spread of everything for our gluten and dairy-free
+          guest. Everyone couldn’t stop talking about the food! Besides being delicious, the spread was also gorgeous
+          which was the cherry on top! Thank you Anna, can’t wait to work with you again!”</p>
+        <div class="testimonial-bottom">
+          <b>Emma Fox</b>
+          <a href="/">Link to reivew</a>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>“Every cake I have had from Anna is amazing. They look and taste unreal every time and I can’t recommend her
+          enough! So professional and organised even with my last minute orders thank you! Will never stop ordering from
+          you”</p>
+        <div class="testimonial-bottom">
+          <b>Katie Van-Roose</b>
+          <a href="/">Link to reivew</a>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>“Anna curated a selection of sweet and savoury items for a grazing platter for a recent collaborative photo
+          shoot. Not only did the platters look excellent and completely fitted the brief that was set, the quality was
+          impeccable. Everything was made from scratch with fresh and tasty ingredients. I would recommend Anna’s
+          services for anyone looking for grazing platters and event catering.”</p>
+        <div class="testimonial-bottom">
+          <b>Ella Wheway</b>
+          <a href="/">Link to reivew</a>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-text">
+      <h2>What My Customers Say</h2>
+      <p>My customers appreciate the effort I put into my food and I'm sure you will too! I always make sure you're
+        satisfied and love your purchases. Here's what my lovely customers have to say.</p>
+      <div>
+        <a class="light-button">Reviews</a>
+        <a class="light-button">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="gallery-wrapper">
+  <div class="wrapper">
+    <div class="gallery-top">
+      <section>
+        <p>Anna Victoria - Create</p>
+        <h2>Explore My Gallery</h2>
+      </section>
+      <a class="dark-button">Gallery</a>
+    </div>
+    <div class="grid">
+      {% image './src/assets/images/gallery/jammy-blondie.jpeg', 'Tray of baked goods', 'row-span-2', 'lazy'%}
+      {% image './src/assets/images/gallery/easter-cupcakes.jpeg', 'Lunch platter', '', 'lazy'%}
+      {% image './src/assets/images/gallery/flower-cake.jpeg', 'Charcuterie board','row-span-2', 'lazy'%}
+      {% image './src/assets/images/gallery/baby-shower-cupcakes.jpeg', 'Lunchtime platter','row-span-2', 'lazy'%}
+      {% image './src/assets/images/gallery/sandwhiches.jpeg', 'Tray of baked goods','', 'lazy'%}
+      {% image './src/assets/images/gallery/fruit-and-cake-board.jpeg', 'Tray of baked goods', 'row-span-2', 'lazy'%}
+      {% image './src/assets/images/gallery/grazing-table.png', 'Tray of baked goods', 'row-span-2','lazy'%}
+      {% image './src/assets/images/gallery/cupcake-box.png', 'Tray of baked goods', 'row-span-2', 'lazy'%}
+      {% image './src/assets/images/gallery/hbd-mark.png', 'Decoared cake', '', 'lazy'%}
+    </div>
+  </div>
+  <div class="contact-box">
+    <div class="contact-text">
+      <p>Anna Victoria - Create</p>
+      <h2>Get In Touch</h2>
+      <p>Collection available from LE7, Delivery available on request.</p>
+      <div class="socials">
+        <a class="social-button" href="https://www.facebook.com/people/Anna-Victoria-Create/61553627710458/"
+          target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="currentColor">
+            <g clip-path="url(#clip0_38_109)">
+              <g mask="url(#mask0_38_109)">
+                <path
+                  d="M24 13.2041C24 6.57597 18.6281 1.2041 12 1.2041C5.37188 1.2041 0 6.57597 0 13.2041C0 18.8291 3.87656 23.5541 9.10312 24.8526V16.8698H6.62812V13.2041H9.10312V11.6245C9.10312 7.5416 10.95 5.64785 14.9625 5.64785C15.7219 5.64785 17.0344 5.79785 17.5734 5.94785V9.2666C17.2922 9.23847 16.8 9.21972 16.1859 9.21972C14.2172 9.21972 13.4578 9.96503 13.4578 11.901V13.2041H17.3766L16.7016 16.8698H13.4531V25.1151C19.3969 24.3979 24 19.3401 24 13.2041Z"
+                  fill="currentColor" />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_38_109">
+                <rect width="24" height="25" fill="white" transform="translate(0 0.930664)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p><b>Facebook</b><br />Anna Victoria - Create</p>
+        </a>
+        <a class="social-button" href="https://wa.me/c/447764736032" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+            <g clip-path="url(#clip0_38_35)">
+              <g mask="url(#mask0_38_35)">
+                <path
+                  d="M20.4054 4.6916C18.1607 2.4416 15.1714 1.2041 11.9946 1.2041C5.4375 1.2041 0.101786 6.53981 0.101786 13.097C0.101786 15.1916 0.648214 17.2381 1.6875 19.0434L0 25.2041L6.30536 23.5488C8.04107 24.497 9.99643 24.9952 11.9893 24.9952H11.9946C18.5464 24.9952 24 19.6595 24 13.1024C24 9.92553 22.65 6.9416 20.4054 4.6916ZM11.9946 22.9916C10.2161 22.9916 8.475 22.5149 6.95893 21.6149L6.6 21.4006L2.86071 22.3809L3.85714 18.7327L3.62143 18.3577C2.63036 16.7827 2.11071 14.9666 2.11071 13.097C2.11071 7.64874 6.54643 3.21303 12 3.21303C14.6411 3.21303 17.1214 4.2416 18.9857 6.11124C20.85 7.98088 21.9964 10.4612 21.9911 13.1024C21.9911 18.5559 17.4429 22.9916 11.9946 22.9916ZM17.4161 15.5881C17.1214 15.4381 15.6589 14.7202 15.3857 14.6238C15.1125 14.522 14.9143 14.4738 14.7161 14.7738C14.5179 15.0738 13.95 15.7381 13.7732 15.9416C13.6018 16.1399 13.425 16.1666 13.1304 16.0166C11.3839 15.1434 10.2375 14.4577 9.08571 12.4809C8.78036 11.9559 9.39107 11.9934 9.95893 10.8577C10.0554 10.6595 10.0071 10.488 9.93214 10.338C9.85714 10.188 9.2625 8.72553 9.01607 8.13088C8.775 7.55231 8.52857 7.63267 8.34643 7.62195C8.175 7.61124 7.97679 7.61124 7.77857 7.61124C7.58036 7.61124 7.25893 7.68624 6.98571 7.98088C6.7125 8.28088 5.94643 8.99874 5.94643 10.4612C5.94643 11.9238 7.0125 13.3381 7.15714 13.5363C7.30714 13.7345 9.25179 16.7345 12.2357 18.0256C14.1214 18.8399 14.8607 18.9095 15.8036 18.7702C16.3768 18.6845 17.5607 18.0524 17.8071 17.3559C18.0536 16.6595 18.0536 16.0649 17.9786 15.9416C17.9089 15.8077 17.7107 15.7327 17.4161 15.5881Z"
+                  fill="currentColor" />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_38_35">
+                <rect width="24" height="25" fill="white" transform="translate(0 0.930664)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p><b>WhatsApp</b><br />+44 7764 736 032</p>
+        </a>
+        <a class="social-button" href="https://www.instagram.com/annavictoria.create/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="currentColor">
+            <path
+              d="M11.0809 9.76155C10.7689 9.97013 10.501 10.2381 10.2926 10.5502C10.0842 10.8623 9.93926 11.2125 9.86613 11.5806C9.71845 12.324 9.87215 13.0957 10.2934 13.7258C10.7147 14.3559 11.369 14.7929 12.1124 14.9406C12.8559 15.0883 13.6275 14.9346 14.2577 14.5133C14.8878 14.092 15.3248 13.4377 15.4725 12.6943C15.6201 11.9508 15.4664 11.1791 15.0452 10.549C14.6239 9.91893 13.9696 9.48196 13.2261 9.33427C12.4827 9.18659 11.711 9.34029 11.0809 9.76155ZM18.7041 6.09727C18.4255 5.8187 18.088 5.59905 17.7184 5.45441C16.7487 5.07405 14.6327 5.09012 13.2666 5.1062C13.047 5.1062 12.8434 5.11155 12.6666 5.11155C12.4898 5.11155 12.2809 5.11155 12.0559 5.1062C10.6898 5.09012 8.58449 5.0687 7.61484 5.45441C7.2452 5.59905 6.91306 5.8187 6.62913 6.09727C6.3452 6.37584 6.13092 6.71334 5.98627 7.08298C5.60592 8.05262 5.62734 10.174 5.63806 11.5401C5.63806 11.7597 5.64342 11.9633 5.64342 12.1347C5.64342 12.3062 5.64342 12.5097 5.63806 12.7294C5.62734 14.0955 5.60592 16.2169 5.98627 17.1865C6.13092 17.5562 6.35056 17.8883 6.62913 18.1722C6.9077 18.4562 7.2452 18.6705 7.61484 18.8151C8.58449 19.1955 10.7005 19.1794 12.0666 19.1633C12.2862 19.1633 12.4898 19.158 12.6666 19.158C12.8434 19.158 13.0523 19.158 13.2773 19.1633C14.6434 19.1794 16.7487 19.2008 17.7184 18.8151C18.088 18.6705 18.4202 18.4508 18.7041 18.1722C18.988 17.8937 19.2023 17.5562 19.347 17.1865C19.7327 16.2222 19.7112 14.1115 19.6952 12.7401C19.6952 12.5151 19.6898 12.3062 19.6898 12.1294C19.6898 11.9526 19.6898 11.749 19.6952 11.5187C19.7112 10.1526 19.7327 8.04191 19.347 7.07227C19.2023 6.70262 18.9827 6.37048 18.7041 6.08655V6.09727ZM15.1095 8.4812C16.0784 9.12908 16.7504 10.1353 16.9774 11.2786C17.2045 12.4219 16.9681 13.6086 16.3202 14.5776C15.9994 15.0574 15.5872 15.4693 15.1072 15.7898C14.6272 16.1103 14.0888 16.3331 13.5227 16.4456C12.3794 16.6726 11.1927 16.4362 10.2238 15.7883C9.25479 15.1411 8.58257 14.1355 8.35502 12.9927C8.12746 11.8499 8.3632 10.6635 9.01038 9.69459C9.65756 8.7256 10.6631 8.05339 11.8059 7.82584C12.9487 7.59828 14.1351 7.83402 15.1041 8.4812H15.1095ZM16.6737 8.41155C16.5077 8.29905 16.3737 8.13834 16.2934 7.95084C16.213 7.76334 16.197 7.55977 16.2345 7.3562C16.272 7.15262 16.3737 6.97584 16.513 6.8312C16.6523 6.68655 16.8398 6.59012 17.038 6.55262C17.2362 6.51512 17.4452 6.5312 17.6327 6.61155C17.8202 6.69191 17.9809 6.82048 18.0934 6.98655C18.2059 7.15262 18.2648 7.35084 18.2648 7.55441C18.2648 7.68834 18.238 7.82227 18.1898 7.94548C18.1416 8.0687 18.0612 8.1812 17.9702 8.27762C17.8791 8.37405 17.7612 8.44905 17.638 8.50262C17.5148 8.5562 17.3809 8.58298 17.247 8.58298C17.0434 8.58298 16.8452 8.52405 16.6791 8.41155H16.6737ZM24.6666 3.56334C24.6666 1.67227 23.1291 0.134766 21.238 0.134766H4.0952C2.20413 0.134766 0.666626 1.67227 0.666626 3.56334V20.7062C0.666626 22.5972 2.20413 24.1347 4.0952 24.1347H21.238C23.1291 24.1347 24.6666 22.5972 24.6666 20.7062V3.56334ZM19.7916 19.2597C18.7898 20.2615 17.5737 20.5776 16.2023 20.6472C14.788 20.7276 10.5452 20.7276 9.13092 20.6472C7.75949 20.5776 6.54342 20.2615 5.54163 19.2597C4.53984 18.258 4.22377 17.0419 4.15949 15.6705C4.07913 14.2562 4.07913 10.0133 4.15949 8.59905C4.22913 7.22762 4.53984 6.01155 5.54163 5.00977C6.54342 4.00798 7.76484 3.69191 9.13092 3.62762C10.5452 3.54727 14.788 3.54727 16.2023 3.62762C17.5737 3.69727 18.7898 4.00798 19.7916 5.00977C20.7934 6.01155 21.1095 7.22762 21.1737 8.59905C21.2541 10.008 21.2541 14.2455 21.1737 15.6651C21.1041 17.0365 20.7934 18.2526 19.7916 19.2544V19.2597Z"
+              fill="currentColor" />
+          </svg>
+          <p><b>Instagram</b><br />@annavictoria.create</p>
+        </a>
+        <a class="social-button" href="mailto:chat@annavictoriacreate.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
+            <g clip-path="url(#clip0_38_90)">
+              <g mask="url(#mask0_38_90)">
+                <path
+                  d="M2.25 1.2041C1.00781 1.2041 0 2.21191 0 3.4541C0 4.16191 0.332813 4.82753 0.9 5.2541L11.1 12.9041C11.6344 13.3026 12.3656 13.3026 12.9 12.9041L23.1 5.2541C23.6672 4.82753 24 4.16191 24 3.4541C24 2.21191 22.9922 1.2041 21.75 1.2041H2.25ZM0 6.4541V16.2041C0 17.8588 1.34531 19.2041 3 19.2041H21C22.6547 19.2041 24 17.8588 24 16.2041V6.4541L13.8 14.1041C12.7312 14.9057 11.2688 14.9057 10.2 14.1041L0 6.4541Z"
+                  fill="currentColor" />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_38_90">
+                <rect width="24" height="19" fill="currentColor" transform="translate(0 0.930664)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p><b>Email</b><br />chat@annavictoriacreate.com</p>
+        </a>
+      </div>
+    </div>
+    <div class="contact-map">
+      {% image './src/assets/images/map.png', 'Anna Victoria Logo', 'lazy'%}
+    </div>
+  </div>
+</section>
